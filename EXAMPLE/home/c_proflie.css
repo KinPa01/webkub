@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  @media only screen and (min-width: 640px) {
+    display: none;
+  }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+body {
+  background-color: #E2E8F0 !important;
+
+  .navigation {
+    height: 70px;
+    background-color: #fff;
+
+    .nav-container {
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+
+      .brand {
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+
+      nav {
+        .nav-list {
+          display: flex;
+          list-style: none;
+
+          li {
+            position: relative;
+            padding: 25px;
+            
+
+            &:hover {
+              background-color: #eee;
+            }
+
+            .nav-dropdown {
+              top: 70px;
+              left: 0;
+              position: absolute;
+              z-index: 1;
+              box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+              background-color: #fff;
+              list-style: none;
+              display: none;
+
+              li {
+                margin: 0;
+                min-width: 190px;
+
+                &:hover {
+                  background-color: #f5f5f5;
+                }
+
+                a {
+                  display: inline-block;
+                }
+              }
+            }
+
+            a {
+              text-decoration: none;
+              color: #333;
+
+              &:not(:only-child):after {
+                padding-left: 4px;
+                content: ' ▾';
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+
+        .brand {
+          padding: 2rem;
+        }
+
+        nav {
+          width: 100%;
+          display: none;
+
+          .nav-list {
+            flex-direction: column;
+          }
+        }
+      }
+
+      @media only screen and (min-width: 640px) {
+        nav {
+          display: block !important;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 640px) {
+      height: auto;
+    }
+  }
+}
+
+.show {
+  display: block !important;
+}
+.gray-line {
+  border: 0;
+  height: 1px;
+  background-color: gray;
+  margin: 20px 0;
+}
+
+
+/* คน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.info-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* สีดำโปร่งแสง */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .info-box {
+    opacity: 1;
+}
+
+/* ปุ่มมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมกดเลขจำไว้นะ */
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #6BA1FB;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}

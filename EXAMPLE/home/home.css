@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  @media only screen and (min-width: 640px) {
+    display: none;
+  }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.student-year-selection {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+body {
+  background-image: url("img/447670685_957860209463874_6747038095875032264_n.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #01dbdf;
+  backdrop-filter: blur(5px);
+
+  .navigation {
+    height: 70px;
+    background-color: #fff;
+
+    .nav-container {
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+
+      .brand {
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+
+      nav {
+        .nav-list {
+          display: flex;
+          list-style: none;
+
+          li {
+            position: relative;
+            padding: 25px;
+            
+
+            &:hover {
+              background-color: #eee;
+            }
+
+            .nav-dropdown {
+              top: 70px;
+              left: 0;
+              position: absolute;
+              z-index: 1;
+              box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+              background-color: #fff;
+              list-style: none;
+              display: none;
+
+              li {
+                margin: 0;
+                min-width: 190px;
+
+                &:hover {
+                  background-color: #f5f5f5;
+                }
+
+                a {
+                  display: inline-block;
+                }
+              }
+            }
+
+            a {
+              text-decoration: none;
+              color: #333;
+
+              &:not(:only-child):after {
+                padding-left: 4px;
+                content: ' ▾';
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+
+        .brand {
+          padding: 2rem;
+        }
+
+        nav {
+          width: 100%;
+          display: none;
+
+          .nav-list {
+            flex-direction: column;
+          }
+        }
+      }
+
+      @media only screen and (min-width: 640px) {
+        nav {
+          display: block !important;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 640px) {
+      height: auto;
+    }
+  }
+}
+
+.show {
+  display: block !important;
+}
+  .gray-line {
+    border: 0;
+    height: 1px;
+    background-color: gray;
+    margin: 20px 0;
+}
+
+
+
+
+
+body {
+  margin: 0;
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  background-image: url(img/suspicious-eyes.gif) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+}
+
+.student-year-selection {
+  position: absolute;
+  top: -50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 5px; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.arrow.left {
+  left: -30px;
+}
+
+.arrow.right {
+  right: -30px;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
