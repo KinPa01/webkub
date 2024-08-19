@@ -2,31 +2,31 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
+      "src": "web/index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "home/*",
+      "src": "web/home/*",
       "use": "@vercel/static"
     },
     {
-      "src": "script/*",
+      "src": "web/script/*",
       "use": "@vercel/static"
     },
     {
-      "src": "Inproflie.html",
+      "src": "web/Inproflie.html",
       "use": "@vercel/static"
     },
     {
-      "src": "i_proflie/*",
+      "src": "web/i_proflie/*",
       "use": "@vercel/static"
     },
     {
-      "src": "Chooseprofile.html/*",
+      "src": "web/Chooseprofile.html/*",
       "use": "@vercel/static"
     },
     {
-      "src": "c_proflie/*",
+      "src": "web/c_proflie/*",
       "use": "@vercel/static"
     }
     
