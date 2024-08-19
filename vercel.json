@@ -3,31 +3,31 @@
   "builds": [
     {
       "src": "index.html",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     },
     {
       "src": "home/*",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     },
     {
       "src": "script/*",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     },
     {
       "src": "Inproflie.html",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     },
     {
       "src": "i_proflie/*",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     },
     {
       "src": "Chooseprofile.html/*",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     },
     {
       "src": "c_proflie/*",
-      "use": "@WEB03_WORK/web"
+      "use": "@vercel/web"
     }
     
   ],
