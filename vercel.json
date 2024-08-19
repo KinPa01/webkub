@@ -1,12 +1,5 @@
 {
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/"
-        },
-        {
-            "src": "/test",
-            "dest": "/"       
-        }
-    ]
-}
+    "scripts": {
+      "build": "[my-framework] build --output public"
+    }
+  }
