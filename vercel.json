@@ -28,6 +28,10 @@
     {
       "src": "c_proflie/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "img/*",
+      "use": "@vercel/static"
     }
     
   ],
