@@ -1,8 +1,48 @@
 {
-    "rewrites": [
+    "version": 2,
+    "builds": [
       {
-        "source": "/(.*)",
-        "destination": "/EXAMPLE"
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "home/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "script/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "Inproflie.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "i_proflie/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "Chooseprofile.html/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "c_proflie/*",
+        "use": "@vercel/static"
+      }
+      
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/Inproflie.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/Chooseprofile.html"
       }
     ]
   }
