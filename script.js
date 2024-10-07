@@ -112,7 +112,7 @@ document.querySelector(".square").addEventListener("wheel", function (event) {
 
 function handleNumberClick() {
   if (currentNumber === 1) {
-    window.location.href = "Chooseprofile1.html";
+    window.location.href = "Chooseprofile.html";
   } else if (currentNumber === 29) {
     window.location.href = "Chooseprofile.html";
   }
